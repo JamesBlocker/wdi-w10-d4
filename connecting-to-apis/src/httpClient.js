@@ -11,8 +11,8 @@ httpClient.postUser = function(userFields) {
     return this({method: 'post', url: '/users', data:'userFields'})
 }
 
-httpClient.deleteUser = function(userId) {
-    return this({ method:'delete', url: '/users/{userId}' })
+httpClient.deleteUser = function(id) {
+    return this({ method:'delete', url: `/users/${id}` })
 }
 
 
